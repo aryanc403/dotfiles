@@ -1,0 +1,54 @@
+: 1535303645:0;ls
+: 1535303655:0;cd github
+: 1535303659:0;git clone https://github.com/abhiyad/i3lock.git
+: 1535303673:0;ld
+: 1535303675:0;clear
+: 1535303676:0;ls
+: 1535303679:0;cd i3lock
+: 1535303681:0;ls
+: 1535303703:0;sudo cp lock /usr/local/bin
+: 1535303725:0;sudo cp icons/ /usr/local/bin -r
+: 1535303729:0;lock
+: 1535303748:0;zsh
+: 1535303750:0;clear
+: 1535303752:0;cd
+: 1535303769:0;clear
+: 1535303799:0;cd github
+: 1535303800:0;ls
+: 1535303818:0;zsh
+: 1535303819:0;clear
+: 1535303820:0;ls
+: 1535303821:0;clear
+: 1535303880:0;cd
+: 1535303881:0;git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
+: 1535303892:0;gedit ~/.zshrc
+: 1535303902:0;zsh
+: 1535303904:0;clear
+: 1535303905:0;ls
+: 1535303908:0;clear
+: 1535303917:0;vim .config/i3/config
+: 1535303974:0;clear
+: 1535304214:0;vim
+: 1535304226:0;git clone --depth=1 git://github.com/amix/vimrc.git ~/.vim_runtime
+: 1535304238:0;sh ~/.vim_runtime/install_basic_vimrc.sh
+: 1535304248:0;clear
+: 1535304249:0;ls
+: 1535304251:0;clear
+: 1535304253:0;vim
+: 1535305104:0;vim .config/i3/config
+: 1535305114:0;clear
+: 1535305179:0;git clone https://github.com/rupa/z.git
+: 1535305183:0;ls
+: 1535305186:0;cd github
+: 1535305189:0;git clone https://github.com/rupa/z.git
+: 1535305212:0;ls
+: 1535305213:0;cd z
+: 1535305214:0;ls
+: 1535305215:0;pwd
+: 1535305257:0;gedit ~/.zshrc
+: 1535305276:0;zsh
+: 1535305302:0;vim z.sh
+: 1535305338:0;zsh
+: 1535305345:0;vim z.sh
+: 1535305379:0;zsh
+
