@@ -34,6 +34,7 @@ Plug 'cocopon/vaffle.vim'                    " File Manager
 Plug 'ensime/ensime-vim'                     "Ensime Plugin For Scala
 Plug 'derekwyatt/vim-scala'                  "Vim-Scala gor scala file type detection
 Plug 'vim-syntastic/syntastic'               "Syntax checking hacks for vim
+Plug 'morhetz/gruvbox'                       "Theme.
 
 call plug#end()
 
@@ -42,8 +43,8 @@ if !has('nvim')
 endif
 
 "set termguicolors
-set background=light
-colorscheme solarized8
+set background=dark
+colorscheme gruvbox
 
 set number                      " Show line number
 set relativenumber              " Show relative line number
