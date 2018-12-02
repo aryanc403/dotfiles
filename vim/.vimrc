@@ -21,18 +21,10 @@ Plug 'scrooloose/nerdcommenter'              " Awesome Commenting
 Plug 'bronson/vim-trailing-whitespace'       " Display trailing whitespace
 Plug 'vim-scripts/auto-pairs-gentle'         " Add brackets automatically
 Plug 'vim-scripts/autoswap.vim'              " Handle swap files intelligently
-Plug 'vim-scripts/AutoComplPop'              " Auto Complete Popup
+"Plug 'vim-scripts/AutoComplPop'              " Auto Complete Popup
 Plug 'sheerun/vim-polyglot'                  " Mega language support pack
 Plug 'ervandew/supertab'                     " Autocomplete
-Plug 'igorjan94/codeforces.vim'              " CodeForces PlugIn
-Plug 'junegunn/vim-easy-align'               " CodeForces PlugIn - Dependency Beautiful standings
-Plug 'aperezdc/vim-template'                 " Load Template
-Plug 'shougo/vimfiler.vim'                   " File Manager
-Plug 'shougo/unite.vim'                      " File Manager Dependency
-Plug 'cocopon/vaffle.vim'                    " File Manager
 "Plug 'vim-scripts/DeleteTrailingWhitespace' " Delete Trailing Whitespace
-Plug 'ensime/ensime-vim'                     "Ensime Plugin For Scala
-Plug 'derekwyatt/vim-scala'                  "Vim-Scala gor scala file type detection
 Plug 'vim-syntastic/syntastic'               "Syntax checking hacks for vim
 Plug 'morhetz/gruvbox'                       "Theme.
 
