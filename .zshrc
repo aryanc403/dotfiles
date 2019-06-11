@@ -94,10 +94,27 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+#export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+export PATH="$HOME/.bin:$PATH"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 alias TC="javaws ~/codes/Topcoder\ Applet/ContestAppletProd.jnlp"
+alias cf="cd ~/codes/PastCodes/codeforces"
+alias cc="cd ~/codes/PastCodes/codechef"
+#alias docker="sudo docker"
+#source /opt/ros/kinetic/setup.zsh
+#source ~/igvc/catkin/devel/setup.zsh
+source /home/aryan/github/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+#. /home/aryan/github/z/z.sh
+#export PATH="$PATH:$HOME/.cargo/bin"
+
+#export PATH="$PATH:/usr/local/cuda-8.0/bin"
+#export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/cuda-8.0/lib64"
+
+#export PATH="$PATH:/usr/local/cuda-9.2/bin"
+#export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/cuda-9.2/lib64"
+
