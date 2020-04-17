@@ -21,8 +21,11 @@ sudo apt install gnome-themes-standard
 sudo apt-get install lxappearance gtk-chtheme qt4-qtconfig
 sudo apt install compton
 sudo apt install i3blocks
-cd ~
+sudo apt install scrot
+sudo apt install rofi
 
+cd ~
+mkdir ~/Pictures/Screenshots
 
 #Correct system fonts Part3 7:50
 #Install Arc Theme
