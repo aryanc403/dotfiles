@@ -9,9 +9,6 @@ cp -r fontawesome-free-5.2.0-desktop/otfs/* ~/.fonts/
 gsettings set org.gnome.desktop.background show-desktop-icons false
 cp -r YosemiteSanFranciscoFont-master/*.ttf ~/.fonts/
 sudo apt-get install lxappearance
-#Correct system fonts Part3 7:50
-
-#Install Arc Theme
 sudo apt install autoconf
 sudo apt-get install libgtk-3-dev
 ./autogen.sh --prefix=/usr
@@ -23,10 +20,12 @@ sudo apt-get install gtk2-engines-pixbuf
 sudo apt install gnome-themes-standard
 sudo apt-get install lxappearance gtk-chtheme qt4-qtconfig
 sudo apt install compton
-
-//open lxappearance and select Arc Dark theme and moka icon pack.
-
+sudo apt install i3blocks
 cd ~
 
+
+#Correct system fonts Part3 7:50
+#Install Arc Theme
+#open lxappearance and select Arc Dark theme and moka icon pack.
 
 
