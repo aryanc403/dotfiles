@@ -23,6 +23,7 @@ sudo apt install compton
 sudo apt install i3blocks
 sudo apt install scrot
 sudo apt install rofi
+sudo apt install xfce4-power-manager
 
 cd ~
 mkdir ~/Pictures/Screenshots
