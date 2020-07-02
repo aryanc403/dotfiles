@@ -60,6 +60,8 @@ ZSH_THEME="agnoster"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
+  zsh-autosuggestions
+  zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -105,16 +107,5 @@ alias TC="javaws ~/codes/Topcoder\ Applet/ContestAppletProd.jnlp"
 alias cf="cd ~/codes/PastCodes/codeforces"
 alias cc="cd ~/codes/PastCodes/codechef"
 #alias docker="sudo docker"
-#source /opt/ros/kinetic/setup.zsh
-#source ~/igvc/catkin/devel/setup.zsh
-source /home/aryan/github/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 #. /home/aryan/github/z/z.sh
 #export PATH="$PATH:$HOME/.cargo/bin"
-
-#export PATH="$PATH:/usr/local/cuda-8.0/bin"
-#export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/cuda-8.0/lib64"
-
-#export PATH="$PATH:/usr/local/cuda-9.2/bin"
-#export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/cuda-9.2/lib64"
-
