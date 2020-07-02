@@ -24,6 +24,8 @@ sudo apt install i3blocks
 sudo apt install scrot
 sudo apt install rofi
 sudo apt install xfce4-power-manager
+sudo apt-get install arc-theme
+sudo apt install libcanberra-gtk-module libcanberra-gtk3-module
 
 cd ~
 mkdir ~/Pictures/Screenshots
