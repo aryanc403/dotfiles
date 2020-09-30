@@ -102,4 +102,9 @@ export PATH="$HOME/.bin:$PATH"
 alias TC="javaws ~/codes/Topcoder\ Applet/ContestAppletProd.jnlp"
 alias cf="cd ~/codes/PastCodes/codeforces"
 alias cc="cd ~/codes/PastCodes/codechef"
-
+alias srm="cd ~/codes/PastCodes/topcoder/current"
+alias python3="time python3"
+alias pypy3="time pypy3"
+alias tlebot="source ~/.virtualenvs/tlebot/bin/activate"
+alias pythn2="source ~/.virtualenvs/pythn2/bin/activate"
+alias sshnimbus='ssh -i "~/aws/nimbus2.pem" ubuntu@ec2-52-87-155-46.compute-1.amazonaws.com'
