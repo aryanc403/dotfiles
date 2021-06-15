@@ -215,15 +215,18 @@ bindsym $mod+Shift+x exec i3lock --color "$bg-color"
 #bindsym XF86AudioPrev exec playerctl previous
 
 #Google Chrome
-bindsym $mod+c exec google-chrome-stable
+#bindsym $mod+c exec google-chrome-stable
+bindsym $mod+c exec brave
 
 #default Launching
 
-exec google-chrome-stable
-assign [class="google-chrome-stable"]=$ws1
+#exec google-chrome-stable
+exec brave
+#assign [class="google-chrome-stable"]=$ws1
+assign [class="brave"]=$ws1
 
-exec slack
-assign [class="slack"]=$ws10
+#exec slack
+#assign [class="slack"]=$ws10
 
 exec_always feh --bg-scale /home/aryan/github/WallPapers/road.jpg
 exec_always nm-applet
@@ -231,6 +234,7 @@ exec_always blueman-manager
 exec_always blueman-applet
 exec xfce4-power-manager
 exec safeeyes
+#exec gnome-calendar
 
 # Screen Shots
 bindsym Print exec scrot $HOME/Pictures/Screenshots/`date +%Y-%m-%d_%H:%M:%S`.png
