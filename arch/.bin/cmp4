@@ -1,0 +1,3 @@
+#!/bin/zsh
+file=${1:-a.cpp}
+time g++ -DARYANC403 -DLOCAL -DHOME ${file} -o ${file}.exe -fsanitize=undefined,signed-integer-overflow -Wall -std=gnu++17 && time ./${file}.exe ${2}

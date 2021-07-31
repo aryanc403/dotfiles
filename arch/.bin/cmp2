@@ -1,0 +1,4 @@
+#!/bin/zsh
+file=${1:-a.cpp}
+#g++ ${file} -o ${file}.exe -std=gnu++14 && time ./${file}.exe ${2}
+time g++ -static -DONLINE_JUDGE -DLOCAL5 -O2 -std=c++17 ${file} -o ${file}.exe && time ./${file}.exe ${2}

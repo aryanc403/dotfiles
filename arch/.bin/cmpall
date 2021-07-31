@@ -1,0 +1,4 @@
+#!/bin/zsh
+file=${1:-a.cpp}
+#time g++ -DARYANC403 -DLOCAL -Wall -Wextra  -std=c++17  -O2 -Wformat=2 -Wfloat-equal -Wlogical-op -Wshift-overflow=2 -Wduplicated-cond -Wcast-qual -Wcast-align -Wno-misleading-indentation -D_GLIBCXX_DEBUG -D_GLIBCXX_DEBUG_PEDANTIC -D_FORTIFY_SOURCE=2 -fsanitize=address -fsanitize=undefined -fno-sanitize-recover -fstack-protector -std=gnu++17 -H ${file}
+time g++ -DARYANC403 -DLOCAL -Wall -Wextra  -std=c++17  -O2 -Wformat=2 -Wfloat-equal -Wlogical-op -Wshift-overflow=2 -Wduplicated-cond -Wcast-qual -Wcast-align -Wno-misleading-indentation -D_GLIBCXX_DEBUG -D_GLIBCXX_DEBUG_PEDANTIC -D_FORTIFY_SOURCE=2 -fsanitize=address -fsanitize=undefined -fno-sanitize-recover -fstack-protector -std=gnu++17 ${file} -o ${file}.exe && time ./${file}.exe ${2}

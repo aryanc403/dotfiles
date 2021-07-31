@@ -1,0 +1,3 @@
+#!/bin/zsh
+file=${1:-a.cpp}
+g++ -D ARYANC403=1 -D LOCAL=1 ${file} -o ${file}.exe -fsanitize=address,undefined,signed-integer-overflow -Wall -std=gnu++17 && time java -jar tester.jar -exec "./${file}.exe" -seed ${2}

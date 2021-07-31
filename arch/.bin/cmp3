@@ -1,0 +1,3 @@
+#!/bin/zsh
+file=${1:-a.cpp}
+time g++ -D ARYANC403 -D LOCAL ${file} -o ${file}.exe -Wall -Wextra -D_GLIBCXX_ASSERTIONS -ggdb3 -fmax-errors=2 -std=gnu++17 && time ./${file}.exe ${2}

@@ -1,0 +1,12 @@
+#!/bin/zsh
+xrandr --output HDMI1 --off
+#xrandr --delmonitor HDMI1~1
+#xrandr --delmonitor HDMI1~2
+xrandr --setmonitor HDMI1~1 1792/469x1080/280+2688+0 HDMI1
+xrandr --setmonitor HDMI1~2 768/201x1080/280+1920+0 none
+xrandr --fb 2560x1080
+xrandr --output HDMI1 --mode 2560x1080 --right-of eDP1
+
+# 50-50
+# xrandr --setmonitor HDMI1~1 1280/335x1080/280+1920+0 HDMI1
+# xrandr --setmonitor HDMI1~2 1280/335x1080/280+3200+0 none

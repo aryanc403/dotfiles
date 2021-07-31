@@ -1,0 +1,4 @@
+#!/bin/zsh
+file=${1:-temp}
+touch ${file}.in
+touch ${file}.out

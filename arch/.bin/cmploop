@@ -1,0 +1,10 @@
+#!/bin/zsh
+file=${1:-a.cpp}
+# g++ -D ARYANC403=1 -D LOCAL=1 ${file} -o ${file}.exe -fsanitize=address,undefined,signed-integer-overflow -Wall -std=gnu++17
+g++ -D ARYANC403=1 -D LOCAL=1 ${file} -o ${file}.exe -fsanitize=address,undefined,signed-integer-overflow -Wall -std=gnu++17
+counter=${2}
+while [ $counter -le ${3} ]
+do
+java -jar tester.jar -exec "./${file}.exe" -novis -seed $counter
+((counter++))
+done
