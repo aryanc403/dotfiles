@@ -1,3 +1,4 @@
 #!/bin/zsh
+xrandr --output HDMI1 --off
 xrandr --delmonitor HDMI1~1
 xrandr --delmonitor HDMI1~2
