@@ -1,12 +1,25 @@
 #!/bin/zsh
+zmodload zsh/mathfunc
+ratioPercent=${1:-37}
+ratio=$((ratioPercent/100.0))
+leftPixel=$((int(rint(2560*ratio))))
+leftWidth=$((int(rint(670*ratio))))
+
+rightPixel=$((2560-leftPixel))
+rightWidth=$((670-leftWidth))
+
+echo "Ratio - "$((ratioPercent)):$((100-ratioPercent))
+echo "Left config - "$leftPixel,$leftWidth
+echo "Right config - "$rightPixel,$rightWidth
+
 xrandr --output HDMI1 --off
-#xrandr --delmonitor HDMI1~1
-#xrandr --delmonitor HDMI1~2
-xrandr --setmonitor HDMI1~1 1792/469x1080/280+2688+0 HDMI1
-xrandr --setmonitor HDMI1~2 768/201x1080/280+1920+0 none
+xrandr --setmonitor HDMI1~1 $((rightPixel))/$((rightWidth))x1080/280+$((1920+leftPixel))+0 HDMI1
+xrandr --setmonitor HDMI1~2 $((leftPixel))/$((leftWidth))x1080/280+1920+0 none
 xrandr --fb 2560x1080
 xrandr --output HDMI1 --mode 2560x1080 --right-of eDP1
 
 # 50-50
 # xrandr --setmonitor HDMI1~1 1280/335x1080/280+1920+0 HDMI1
 # xrandr --setmonitor HDMI1~2 1280/335x1080/280+3200+0 none
+
+# xrandr --setmonitor HDMI1 2560/670x1080/280+3200+0 HDMI1
