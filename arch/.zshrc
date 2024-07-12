@@ -1,3 +1,10 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -8,7 +15,8 @@ export ZSH="/home/aryan/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="agnoster"
+#ZSH_THEME="agnoster"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -99,29 +107,37 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 export PATH="$HOME/.bin:$PATH"
-export CPLUS_INCLUDE_PATH="/home/aryan/codes/ac-library:/home/aryan/codes/PastCodes/setup:/home/aryan/codes/testlibraries"
-alias expand="python3 /home/aryan/codes/ac-library/expander.py"
+export PATH="$HOME/.local/bin:$PATH"
+export CPLUS_INCLUDE_PATH="/home/aryan/codes/ac-library:/home/aryan/codes/PastCodes/setup:/home/aryan/codes/testlibraries:$CPLUS_INCLUDE_PATH"
+export CHROOT="$HOME/chroot"
+alias fulexpand="python3 /home/aryan/codes/ac-library/expander.py"
 alias TC="javaws ~/codes/Topcoder\ Applet/ContestAppletProd.jnlp"
 alias cf="cd ~/codes/PastCodes/codeforces"
 alias cc="cd ~/codes/PastCodes/codechef"
 alias atc="cd ~/codes/PastCodes/atcoder"
 alias srm="cd ~/codes/PastCodes/topcoder/current"
-alias testing="cd ~/codes/testing"
 alias pe="cd ~/codes/PastCodes/others/projectEuler"
 alias python="time python"
 alias python3="time python3"
 alias pypy3="time pypy3"
-alias tlebot="source ~/.virtualenvs/tleBot/bin/activate"
-alias remindbot="source ~/.virtualenvs/remindBot/bin/activate"
-alias pythn2="source ~/.virtualenvs/pythn2/bin/activate"
-alias tleIntents="source ~/.virtualenvs/tleIntents/bin/activate"
-alias sshnimbus='ssh -i "~/aws/nimbus2.pem" ubuntu@ec2-52-87-155-46.compute-1.amazonaws.com'
-alias pcontest="python ~/codes/PastCodes/setup/download_prob.py contest "
-alias pproblem="python ~/codes/PastCodes/setup/download_prob.py prob "
-alias kcontest="python ~/codes/keep_setup/download_prob.py contest "
+alias kcontest="python ~/codes/k_setup/download_prob.py contest "
+alias acontest="python ~/codes/a_setup/download_prob.py contest "
+alias aproblem="python ~/codes/a_setup/download_prob.py prob "
 alias mt="make test -C "
 alias mtdebug="make test DEBUG=true -C "
 alias mkproblem="~/codes/PastCodes/setup/make_prob.sh "
+alias tctest="sudo docker-compose down -v && sudo docker-compose up --build"
 #eval "$(rbenv init -)"
 
 #export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# change default editor to vim
+export VISUAL="vim"
+
