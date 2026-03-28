@@ -145,12 +145,11 @@ alt-v = 'layout vertical'
 alt-e = 'layout horizontal vertical'
 
 # --- Terminal & Launcher ---
-alt-enter = "exec-and-forget open -na 'iTerm'"
-alt-d = 'exec-and-forget open -a Raycast'
+alt-enter = "exec-and-forget osascript -e 'tell application \"iTerm\" to create window with default profile'"
 alt-c = "exec-and-forget open -na 'Firefox' --args -new-window"
 
 # --- Window Management ---
-alt-shift-q = 'exec-and-forget osascript -e "tell application \"$(aerospace list-windows --focused --format "%{app-name}")\" to quit"'
+alt-shift-q = 'exec-and-forget ~/.config/aerospace/close-window.sh'
 alt-f = 'fullscreen'
 alt-shift-space = 'layout floating tiling'
 

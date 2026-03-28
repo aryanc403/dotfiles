@@ -11,6 +11,7 @@ do
                               label.y_offset=-1 \
                               update_freq=1 \
                               script="$PLUGIN_DIR/space.sh" \
+                              click_script="aerospace workspace $sid" \
                               background.corner_radius=5 \
                               background.height=25
 done
